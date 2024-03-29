@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="poker">
+ <names>
+  <name lang="de_DE">Poker</name>
+  <name lang="en_US">Untitled</name>
+ </names>
+ <descriptionLanguages>
+  <language>de_DE</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

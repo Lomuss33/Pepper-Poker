@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//THM//DTD HTML 2.0//EN">
+<html lang="de">
+<head>
+<meta http-equiv="Content-Typer" content="text/html" charset="UTF-8">
+<meta name="viewport" content="width=1280, user-scalable=no" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="/libs/qi/2/qi.js"></script>
+<script src = "javascript.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href = "style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pokerhand-Bewertungsspiel</title>
+<style>
+    body { font-family: Arial, sans-serif; background-color: #006400; color: #fff; margin: 20px; }
+    .karte { display: inline-block; margin: 20px; }
+    .hand { margin-bottom: 20px;}
+    .button { background-color: #007bff; color: #ffffff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+    .button:hover { background-color: #0056b3; }
+    table { background-color: #fff; color: #000; margin-top: 20px; border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 8px; border: 1px solid #ddd; }
+    th { background-color: #4CAF50; color: white; }
+    #Guthaben_Text{margin-left: 20px;}
+    #Guthaben{margin-left: 20px;}
+</style>
+</head>
+<body>
+
+<h1 style="font-size: 30px;">Poker</h1>
+
+<div class="hand">
+    <img src="" class="karte" onclick="karteAuswaehlen(0)" id="karte1" type="image/png">
+    <img src="" class="karte" onclick="karteAuswaehlen(1)" id="karte2" type="image/png">
+    <img src="" class="karte" onclick="karteAuswaehlen(2)" id="karte3" type="image/png">
+    <img src="" class="karte" onclick="karteAuswaehlen(3)" id="karte4" type="image/png">
+    <img src="" class="karte" onclick="karteAuswaehlen(4)" id="karte5" type="image/png">
+</div>
+
+<button id="karten_austauschen" onclick="kartenAustauschen()" class="button">Karten austauschen</button>
+<a id="Guthaben_Text">Guthaben: </a>
+<a id="Guthaben"></a>
+<a style="margin-top: 20px;margin-bottom: 20px; margin-right: 50px; float: right;">Einsatz pro Spiel: 10</a>
+
+
+<!--
+<form action="#" method="POST">
+    <label for="austausch">Wähle Karten zum Austauschen (0-4):</label><br>
+    <input type="text" id="austausch" name="austausch" value=""><br><br>
+    <input type="submit" value="Karten austauschen" class="button">
+</form>
+
+
+<button id="error_message1">keine Veränderung</button>
+<button id="error_message2">keine Veränderung</button>
+<button id="error_message3">keine Veränderung</button>
+<button id="error_message4">keine Veränderung</button>
+<button id="error_message5">keine Veränderung</button>
+-->
+
+<!-- <button id="handkarten_ausgabe">keine Daten verfügbar</button> -->
+
+
+
+<!-- Gewinntabelle -->
+<h2>Gewinntabelle</h2>
+<table>
+    <tr>
+        <th>Hand</th>
+        <th>Gewinnausschüttung</th>
+    </tr>
+    <tr>
+        <td>Royal Flush</td>
+        <td>8000</td>
+    </tr>
+    <tr>
+        <td>Straight Flush</td>
+        <td>600</td>
+    </tr>
+    <tr>
+        <td>Vier Gleiche</td>
+        <td>220</td>
+    </tr>
+    <tr>
+        <td>Full House</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Flush</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>Strasse</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>Drei Gleiche</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Zwei Paare</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Ein Paar (Buben oder Höher)</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Verloren</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<div id="popup" class="hidden">
+
+    <div class="popup-content">
+        <span id="closePopupBtn" onclick="closePopup()">&times;</span>
+        <p id="youwin">You WIN!</p>
+        <p id="handtyp">ROYAL FLUSH</p>
+        <p id="gewinn">600€</p>
+    </div>
+</div>
+
+</body>
+</html>
