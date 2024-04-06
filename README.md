@@ -1,7 +1,6 @@
 # Pepper-Poker
 This project aims to combine robotics with classic gaming in a fun and interactive way. Enjoy playing Video Poker with Pepper!
 
-
 ### Pepper Video Poker
 
 Welcome to the GitHub repository for Pepper Video Poker! This unique game brings the excitement of video poker to the interactive and engaging Pepper robot. Developed using a combination of Choregraphe 2.5.10, Python, JavaScript, HTML, and CSS, this project allows players to enjoy a classic poker game while interacting with Pepper in a whole new way.
