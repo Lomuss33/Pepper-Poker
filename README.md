@@ -15,7 +15,7 @@ Welcome to the GitHub repository for Pepper Video Poker! This unique game brings
 #### Gameplay:
 
 1. **Start**: Initiate the game on Pepper using Choregraphe and the Python script. The game interface will then be ready on Pepper's tablet.
-2. **Play**: You're dealt a five-card hand. Choose cards to hold and draw new ones, aiming to create the best poker hand.
+2. **Play**: You're dealt a five-card hand. Choose cards to hold and draw new ones, aiming to create the best poker hand. 
 3. **Score**: Points are awarded based on the strength of your hand, accumulating throughout the game. View the points per hand directly below the game on Pepper's tablet.
 4. **Interact**: Pepper celebrates your wins with clapping, cheers, and compliments. The higher your score, the more dynamic Pepper's reactions.
 
