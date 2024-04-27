@@ -12,7 +12,7 @@ Welcome to the GitHub repository for Pepper Video Poker! This unique game brings
 - **Dynamic Pepper Reactions**: As your score increases, Pepper responds with more positive, animated, and varied reactions. High scores trigger enthusiastic movements, sounds, and compliments from Pepper, with randomized actions to keep the game exciting.
 - **Multilingual Support**: The game and Pepper's interactions are in German, making it accessible to German-speaking players and those interested in language immersion.
 
-#### Gameplay:
+#### Gameplay: 
 
 1. **Start**: Initiate the game on Pepper using Choregraphe and the Python script. The game interface will then be ready on Pepper's tablet.
 2. **Play**: You're dealt a five-card hand. Choose cards to hold and draw new ones, aiming to create the best poker hand. 
